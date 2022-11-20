@@ -14,6 +14,17 @@
             <li><a href="form-daftar.php">Form Pendaftaran</a></li>
             <li><a href="list-siswa.php">Pendaftar</a></li>
         </ul>
+        <?php if (isset($_GET['status'])): ?>
+        <p>
+            <?php
+            if ($_GET['status'] == 'sukses') {
+                echo "Pendaftaran siswa baru berhasil!";
+            } else {
+                echo "Pendaftaran gagal!";
+            }
+        ?>
+        </p>
+        <?php endif; ?>
     </nav>
 </body>
 
