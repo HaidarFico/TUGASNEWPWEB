@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 
-if (isset($_POST['daftar'])) {
+if (isset($_POST['Daftar'])) {
     $nama = $_POST['nama'];
     $alamat = $_POST['alamat'];
     $sekolah = $_POST['sekolah_asal'];
